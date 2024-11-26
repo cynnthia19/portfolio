@@ -7,23 +7,83 @@
 
     <!-- lien css cdn boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <style>
+        body{
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+        }
+        .banner {
+            background-color: rgb(235,165,80);
+            width: 100%;
+            margin: 0;
+            padding: 50px 0;
+        }
+        footer {
+            background-color: rgb(235,165,80);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
 
+      a,.nav-link{
+            font-weight: bold;
+        }
+    </style>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(235,165,80);">
     <div class="container">
-        <div class="row">
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-        
-                        </div>
-                    </div>
+        <a class="navbar-brand fw-bold" href="#">St Clair Cynthia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="banner text-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold">St Clair Cynthia</h1>
+                <p class="lead">Full-stack developpeur</p>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-outline-secondary">Default</button>
                 </div>
-            </section>
-        
-            <section>
-                <div class="container">
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="/img1.jpg" alt="Hero image" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+     <div class="container">
+        <div class="row">    
+            <section class="container" id="Apropos">
                     <div class="row d-flex align-items-center" style="height: 100vh;">
                         <!-- Colonne de l'image -->
                         <div class="col-md-6 d-flex justify-content-center">
@@ -38,25 +98,115 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eligendi doloribus itaque architecto vel blanditiis voluptatibus et, a soluta nobis nostrum culpa! Vel temporibus ipsa dolores modi assumenda nihil minus!</p>
                         </div>
                     </div>
-                </div>
             </section>
         
-            <section>
-                <div class="container">
-                    <h1>Mes Services</h1>
-                    <div class="row row-cols-2">
-                        <div class="col">
-                            <div class="card" style="background: rebeccapurple;">
-                                <img src="/icons8-protection-des-données-100.png" alt="">
+            <section class="container text-center my-5">
+                    <h2 class="fw-bold text-uppercase text-secondary">Mes Services</h2>
+                    <div class="row g-4">
+                        <!-- Service 1 -->
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="card border-2 shadow-sm w-100 d-flex flex-row align-items-center px-3 py-3">
+                                <div class="icon-wrapper bg-light rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 70px; height: 70px;">
+                                    <img src="/icons8-protection-des-données-100.png" alt="Icon" style="width: 50px;">
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-1">Gestion des bases de données</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service 2 -->
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="card border-2 shadow-sm w-100 d-flex flex-row align-items-center px-3 py-3">
+                                <div class="icon-wrapper bg-light rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 70px; height: 70px;">
+                                    <img src="/icons8-web-design-100.png" alt="Icon" style="width: 50px;">
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-1">Développement Web</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service 3 -->
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="card border-2 shadow-sm w-100 d-flex flex-row align-items-center px-3 py-3">
+                                <div class="icon-wrapper bg-light rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 70px; height: 70px;">
+                                    <img src="/icons8-administrateur-de-réseau-100.png" alt="Icon" style="width: 50px;">
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-1">Administrateur de Reseaux</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service 4 -->
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="card border-2 shadow-sm w-100 d-flex flex-row align-items-center px-3 py-3">
+                                <div class="icon-wrapper bg-light rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 70px; height: 70px;">
+                                    <img src="/icons8-gestion-de-projet-100.png" alt="Icon" style="width: 50px;">
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-1">Gestion de Projet informatique</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
+
+            <section class="container  my-5">
+                    <h2 class="fw-bold text-uppercase text-center text-secondary">Contactez-moi</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <form action="">
+                                <label for="" class="form-label">Nom</label>
+                                <input type="text" class="form-control">
+                                <label for="" class="form-label">Prenom</label>
+                                <input type="text" class="form-control">
+                                <label for="" class="form-label">Email</label>
+                                <input type="text" class="form-control">
+                                <label for="" class="form-label">Message</label>
+                                <textarea name="" id="" class="form-control"></textarea>
+                            </form>
+                        </div>
+
+                        <div class="col-md-6 d-flex flex-column align-items-center ">
+                           
+                            <div class="d-flex align-items-center">
+                                <div class="icon-wrapper d-flex justify-content-center align-items-center" style="width: 70px; height: 70px;">
+                                    <img src="/icons8-nouveau-message-100.png" alt="" style="width: 30px;">
+                                </div>
+                                <div>
+                                    <a href="#" style="text-decoration: none; color: black;">stclaircynthia37@gmail.com</a>
+                                </div> 
+                            </div>
+                            
+                            <div class="d-flex align-items-center">
+                                <div class="icon-wrapper d-flex justify-content-center align-items-center" style="width: 70px; height: 70px;">
+                                    <img src="/icons8-téléphone-100.png" alt="" style="width: 30px;">
+                                </div>
+                                <div>
+                                    <a href="#" style="text-decoration: none; color: black;">(509) 4062-9490 / 3317-5767</a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <img src="/icons8-facebook-nouveau-100.png" alt="" style="width: 30px;">
+                                <img src="/icons8-instagram-100.png" alt="" style="width: 30px;">
+                                <img src="/icons8-linkedin-100.png" alt="" style="width: 30px;">
+                                <img src="/icons8-x-100.png" alt="" style="width: 30px;">
+                            </div>
+                        </div>
+                        
+                    </div>
+            </section>
+
         </div>
     </div>
 
-   
+    <footer>
+        &copy; 2024 St Clair Cynthia - Tous droits réservés.
+    </footer>
     
 
     <!--lien cdn javascript boostrap-->
